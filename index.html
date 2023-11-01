@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/menu.css" />
+  </head>
+  <body>
+    <header>
+      <div class="olimp_wrapper">
+        <img
+          class="header__olimp"
+          src="./images/svg/header-olimpick.svg"
+          alt=""
+        />
+        <img
+          class="header__olimp"
+          src="./images/svg/header-olimpick.svg"
+          alt=""
+        />
+        <img
+          class="header__olimp"
+          src="./images/svg/header-olimpick.svg"
+          alt=""
+        />
+        <img
+          class="header__olimp"
+          src="./images/svg/header-olimpick.svg"
+          alt=""
+        />
+        <img
+          class="header__olimp"
+          src="./images/svg/header-olimpick.svg"
+          alt=""
+        />
+        <img
+          class="header__olimp"
+          src="./images/svg/header-olimpick.svg"
+          alt=""
+        />
+      </div>
+
+      <div class="container">
+        <nav class="nav">
+          <ul class="list nav__list">
+            <li>
+              <a class="link" href="#"
+                ><img
+                  class="nav__icon"
+                  width="20px"
+                  src="./images/svg/search.svg"
+                  alt=""
+              /></a>
+            </li>
+            <li><a class="link" href="#">Location</a></li>
+            <li><a class="link" href="#">About us</a></li>
+          </ul>
+          <a class="nav__logo" href="#"
+            ><img src="./images/svg/logo.svg" alt=""
+          /></a>
+          <ul class="list nav__list">
+            <li><a class="link" href="#">Contact</a></li>
+            <li><a class="link current" href="#">Home</a></li>
+            <li>
+              <a class="link" href="#"
+                ><img
+                  class="nav__icon"
+                  width="20px"
+                  src="./images/svg/burger.svg"
+                  alt=""
+              /></a>
+            </li>
+          </ul>
+        </nav>
+        <div class="menu-toggle">☰</div>
+      </div>
+    </header>
+
+    <main>
+      <section class="section">
+        <div class="container">
+          <div class="hero__wrapper">
+            <div class="hero__wrapper-container__left">
+              <img
+                class="hero__wrapper-icon"
+                width="200px"
+                src="./images/svg/2x.svg"
+                alt=""
+              />
+              <h2 class="hero__wrapper-title">Do you want to get fit ?</h2>
+              <p class="hero__wrapper-paragraph">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Sapiente, iste accusantium!
+              </p>
+              <a class="link hero__wrapper--link" href="#">Read More</a>
+            </div>
+            <div class="hero__wrapper-container__center">
+              <h1 class="hero__title">fitness gym center</h1>
+            </div>
+            <div class="hero__wrapper-container__right">
+              <img
+                class="hero__wrapper-icon"
+                width="200px"
+                src="./images/svg/arrow.svg"
+                alt=""
+              />
+              <h2 class="hero__wrapper-title">Start training today</h2>
+              <p class="hero__wrapper-paragraph">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Sapiente, iste accusantium!
+              </p>
+              <a class="link hero__wrapper--link" href="#">Join now</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script>
+      const menuToggle = document.querySelector(".menu-toggle");
+      const nav = document.querySelector(".nav");
+      menuToggle.addEventListener("click", () => {
+        nav.style.display =
+          nav.style.display === "none" || nav.style.display === ""
+            ? "flex"
+            : "none";
+      });
+    </script>
+  </body>
+</html>
